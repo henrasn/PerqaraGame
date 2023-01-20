@@ -8,13 +8,13 @@ import androidx.viewpager2.adapter.FragmentStateAdapter
 import androidx.viewpager2.widget.ViewPager2.OnPageChangeCallback
 import com.google.android.material.tabs.TabLayoutMediator
 import com.henra.perqaragame.R
-import com.henra.perqaragame.databinding.ActivityMoviesBinding
+import com.henra.perqaragame.databinding.ActivityGamesBinding
 import com.henra.perqaragame.utils.viewBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class GamesActivity : AppCompatActivity() {
-    private val binding by viewBinding(ActivityMoviesBinding::inflate)
+    private val binding by viewBinding(ActivityGamesBinding::inflate)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

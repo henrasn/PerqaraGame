@@ -63,16 +63,16 @@ class GameRemoteMediator(
     private suspend fun getRemoteKeyForFirstItem(state: PagingState<Int, Game>): RemoteKey? {
         return state.pages.firstOrNull {
             it.data.isNotEmpty()
-        }?.data?.firstOrNull()?.let { movie ->
-            gameDB.getRemoteDao().getRemoteKeyByGameID(movie.id)
+        }?.data?.firstOrNull()?.let { game ->
+            gameDB.getRemoteDao().getRemoteKeyByGameID(game.id)
         }
     }
 
     private suspend fun getRemoteKeyForLastItem(state: PagingState<Int, Game>): RemoteKey? {
         return state.pages.lastOrNull {
             it.data.isNotEmpty()
-        }?.data?.lastOrNull()?.let { movie ->
-            gameDB.getRemoteDao().getRemoteKeyByGameID(movie.id)
+        }?.data?.lastOrNull()?.let { game ->
+            gameDB.getRemoteDao().getRemoteKeyByGameID(game.id)
         }
     }
 }

@@ -1,6 +1,6 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="Theme.PerqaraMovie" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.PerqaraGame" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/navy</item>
         <item name="colorPrimaryVariant">@color/navy</item>
