@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group
+        android:id="@+id/grup"
+        android:checkableBehavior="all">
+        <item
+            android:id="@+id/menu_favorite"
+            android:actionLayout="@layout/menu_checkable_favorite"
+            android:checkable="true"
+            android:icon="@drawable/favorite_checkable"
+            android:title="favorite"
+            app:showAsAction="always" />
+    </group>
+</menu>

@@ -1,0 +1,41 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.PerqaraMovie" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/navy</item>
+        <item name="colorPrimaryVariant">@color/navy</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="tabStyle">@style/Widget.App.TabLayout</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="RoundedImage">
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="TabLayout" parent="">
+        <item name="colorPrimary">@color/dark_gray</item>
+        <item name="colorOnSurface">@color/gray</item>
+    </style>
+
+    <style name="Widget.App.TabLayout" parent="Widget.MaterialComponents.TabLayout">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.TabLayout</item>
+        <item name="tabTextAppearance">@style/TextAppearance.App.Button</item>
+    </style>
+
+    <style name="ThemeOverlay.App.TabLayout" parent="">
+        <item name="colorPrimary">@color/dark_gray</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/gray</item>
+    </style>
+
+    <style name="TextAppearance.App.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="textAllCaps">false</item>
+    </style>
+</resources>
